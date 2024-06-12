@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Estacionamiento</title>
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginContainer" style="display: none;">
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+    
+    <div id="adminContainer" style="display: none;">
+        <div class="header">
+            <h1>Área de Administración</h1>
+            <h2>Rellene los datos para generar informe</h2>
+            <div class="actions">
+                <button onclick="generateReport()" class="botongenerar">Generar Informe</button>
+                <button onclick="logoutUser()">Cerrar sesión</button>
+            </div>
+        </div>
+        <parking-manager data-title-a="Sección A" data-title-b="Sección B"></parking-manager>
+        <div id="reports">
+            <div id="reportOutput"></div>
+        </div>
+    </div>
+
+    <div id="clienteContainer" style="display: none;">
+        <div class="header">
+            <h1>Área del Cliente</h1>
+            <button onclick="logoutUser()">Cerrar sesión</button>
+        </div>
+        <parking-manager data-title-a="Sección A" data-title-b="Sección B"></parking-manager>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+.parking-manager {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: none; /* Ocultar los inputs por defecto */
+}
+
+.status {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.status.available {
+  background-color: green;
+}
+
+.status.occupied {
+  background-color: red;
+}
+
+.card button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+  display: none; /* Ocultar el botón por defecto */
+}
+
+.card button:hover {
+  background-color: navy;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+#loginContainer,
+#mainContainer {
+  margin: 20px;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+}
+
+#loginForm input {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#loginForm button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.parking-manager .section {
+  margin-bottom: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.status.available {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.status.occupied {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.report-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+.botongenerar{
+  text-align: center;
+}
